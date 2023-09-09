@@ -11,6 +11,9 @@ body{
 }
 p{
     color:hsl(201, 11%, 66%);
+    max-width:550px;
+    margin-left:auto;
+    margin-right:auto;
 }
 h1,h2{
     font-weight: 600;
