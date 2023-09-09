@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+body{
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    font-size: 18px;
+    font-family:"Bai Jamjuree";
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box
+}
+p{
+    color:hsl(201, 11%, 66%);
+}
+h1,h2{
+    font-weight: 600;
+    color:hsl(210, 10%, 33%);
+}
+
+
+
+header{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    padding-top:100px;
+    
+}
+header p{
+    padding-left:25px;
+    padding-right:25px;
+}
+.logo{
+    width:25%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.iOS-button{
+    border:none;
+    color:white;
+    background-color:hsl(171, 66%, 44%);
+    width:250px;
+    height:40px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:20px;
+    margin-bottom:10px;
+    margin-top:40px;
+    cursor:pointer;
+    transition: background-color 0.15s;
+    border-bottom:5px solid hsl(171, 69%, 35%);
+    box-shadow:0px 10px 8px hsla(171,58%,55%,0.30);
+    
+}
+.Mac-button{
+    border:none;
+    color:white;
+    background-color:hsl(233, 100%, 69%);
+    width:250px;
+    height:40px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:20px;
+    margin-bottom:40px;
+    cursor:pointer;
+    transition: background-color 0.15s;
+    border-bottom:5px solid hsl(233, 58%, 55%);
+    box-shadow:0px 10px 8px hsla(233, 58%, 55%,0.30);
+}
+.underHeaderBox{
+    background-color:white;
+    
+}
+section{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    background-color:white;
+    padding:25px;
+    padding-bottom:100px;
+    
+}
+.computer-img{
+    width:80%;
+}
+.device-img{
+    width:80%;
+}
+.logo-img{
+    margin-bottom:40px;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:rgb(245, 240, 240);
+    padding-top:50px;
+    
+    
+}
+footer img, footer a{
+    margin-bottom:20px;
+}
+.icons img{
+    margin-left:20px;
+}
+.icons img:first-child{
+    margin-left:0px;
+}
+.box{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.grid-links{
+    display:flex;
+    flex-direction: column;
+}
+.icon img{
+    cursor:pointer;
+}
+.icon img:hover{
+    animation-name:rotate;
+    animation-duration: 1s;
+}
+.Mac-button:hover{
+    background-color:hsl(233, 56%, 53%);
+    border-color:hsl(233, 56%, 42%);
+    
+}
+.iOS-button:hover{
+    background-color:hsl(171, 76%, 31%);
+    border-color:hsl(171, 77%, 24%);
+    
+   
+}
+.box img{
+    cursor:pointer;
+}
+.box img:hover{
+    width:60%;
+}
+a{
+    cursor:pointer;
+}
+a:hover{
+    text-decoration: underline;
+    animation-name:increase;
+    animation-duration: 1s;
+}
+.icons img{
+    cursor:pointer;
+   
+}
+
+
+
+
+@keyframes increase{
+    from{
+        font-size:18px;
+    }to{
+        font-size:22px;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }to{
+        transform: rotate(360deg)
+    }
+}
+
+
+
+@media (min-width:54rem){
+    header{
+        background-image: url("images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+        
+        
+    }
+    section:nth-child(2){
+        flex-direction: row;
+    }.icon-box{
+        display:flex;
+    }.icon{
+        width:33%;
+        padding:40px;
+    }.iOS-button{
+        margin-right:20px;
+    }
+    .box{
+        grid-template-columns: repeat(5,1fr);
+        width:100%;
+        place-items: center;
+    }
+    
+   
+    footer .logo{
+        width:10%;
+        
+        
+    }
+    .grid-footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-links{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap:20px;
+        text-align: left;
+    }
+    .logo-box{
+        display:flex;
+        align-items: center;
+    }
+    .icons{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
